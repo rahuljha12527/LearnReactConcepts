@@ -8,12 +8,14 @@ import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/classClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
 
-export default class App extends Component {
+export  default class App extends Component {
   render() {
     return (
       <div className="App">
-        <ParentComponent />
+        {/* <UserGreeting /> */}
+        {/* <ParentComponent /> */}
         {/* <FunctionClick> </FunctionClick> */}
         {/* <EventBind></EventBind> */}
         {/* <ClassClick /> */}
