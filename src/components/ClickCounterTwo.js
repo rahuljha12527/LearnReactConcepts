@@ -18,9 +18,9 @@ import React, { Component } from 'react'
      }
      
     render() {
-        const {count}=this.state;
+        const {count,incrementCount}=this.props;
         return (
-            <button onClick={this.incrementCount}> Clicked {count} X times</button>
+            <button onClick={incrementCount}> Clicked {count} X times</button>
         )
     }
 }
