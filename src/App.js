@@ -29,16 +29,27 @@ import ClickCounterTwo from "./components/ClickCounterTwo";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import User from './components/User';
 import Countertwi from "./components/Countertwi";
+import ComponentC from './components/ComponentC'; 
+import { UserProvider } from "./components/userContext";
+import PostList from "./components/PostList";
+
+
 
 
 export default class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <Countertwi  render={(count,incrementCount)=>
+        <PostList /> 
+        {/* <UserProvider value="Rahul jha "  >
+        <ComponentC />  
+        </UserProvider>
+       */}
+        {/* <Countertwi  render={(count,incrementCount)=>
         <ClickCounterTwo count={count} incrementCount={incrementCount}/>}/>
          <Countertwi  render={(count,incrementCount)=>
-        <HoverCounterTwo count={count} incrementCount={incrementCount}/>}/>
+        <HoverCounterTwo count={count} incrementCount={incrementCount}/>}/> */}
         {/* <ClickCounterTwo />
         <HoverCounterTwo />
         <User render={(isLoggedIn)=>isLoggedIn? 'Rahul':'Guest'} /> */}
